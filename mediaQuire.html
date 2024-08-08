@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    background-color: #eff7ff;
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0b4870;
+    height: 400px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.inner-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    align-items: center;
+    height: 70px;
+    width: 70px;
+}
+
+.image1 {
+    align-items: center;
+    height: 70px;
+    width: 70px;
+}
+
+.heading {
+    color: #f0f0f0;
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+.description {
+    color: #f4f3f3;
+    font-size: 10px;
+    font-family: "Roboto";
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p {
+    border: 2px solid green;
+    height: 2px;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .inner-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .bg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .image1 {
+        order: 1;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .heading {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:900) {
+    .container {
+        background-color: green;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-items">
+
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/freemium-business-model-2-img.png" class="image" />
+                <div>
+                    <h1 class="heading">Social Proof</h1>
+                    <p class="description">As customers,we buy products that make us feel good adout ourselves,products that change us and make us better.</p>
+                </div>
+
+            </div>
+            <p class="p"></p>
+            <div class="bg">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/freemium-business-model-1-img.png" class="image1" />
+                <div class="i">
+
+
+                    <h1 class="heading">Freemium Shift</h1>
+                    <p class="description">We provide a premium package to our customers.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
